@@ -1,0 +1,312 @@
+#contaier-3 {
+  /* Layout Properties */
+  position: absolute;
+  top: 1513px;
+  left: 0px;
+  width: 100vw;
+  height: 102vh;
+  /* UI Properties */
+  background: #e5e5e5 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+#left-side {
+  /* Layout Properties */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 641px;
+  height: 1140px;
+  /* UI Properties */
+  background: transparent
+    url("./Assets/GS_DIGITAL_AD_WALL_FILMS_INTERIOR_DESIGN_COLLECTION_Indoor_MPI8621_Removable@2x.png")
+    0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+#right-side {
+  width: 100%;
+  position: relative;
+  right: 4%;
+}
+#question {
+  /* Layout Properties */
+  position: absolute;
+  top: 42px;
+  left: 742px;
+  width: 215px;
+  height: 61px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 600 51px/63px Aktifo A;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+#img-1-request,
+#img-2-request,
+#img-3-request,
+#img-4-request {
+  /* Layout Properties */
+  position: absolute;
+  top: 14px;
+  left: 742px;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  padding: 5px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  object-fit: contain;
+}
+#img-1-request {
+  position: absolute;
+  top: 124px;
+}
+#img-2-request {
+  position: absolute;
+  top: 234px;
+}
+#img-3-request {
+  position: absolute;
+  top: 354px;
+}
+#img-4-request {
+  position: absolute;
+  top: 474px;
+}
+#title-1-request,#title-2-request,#title-3-request,#title-4-request{
+  /* Layout Properties */
+  position: absolute;
+  top: 125px;
+  left:60%;
+  width: 788px;
+  height: 24px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal medium 20px/34px Aktifo A;
+  letter-spacing: 0px;
+  color: #292929;
+  font-weight: 600;
+  font-size: 18px;
+}
+#title-2-request {
+  position: absolute;
+  top: 240px;
+  left: 60%;
+}
+#title-3-request {
+  position: absolute;
+  top: 355px;
+  left: 60%;
+}
+#title-4-request {
+  position: absolute;
+  top: 470px;
+  left: 60%;
+}
+#parent-request {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#child-request1,
+#child-request2,
+#child-request3,
+#child-request4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  width: 546px;
+  height: 24px;
+}
+#subtitle-1-request{
+  position: absolute;
+  top: 148px;
+  left:60%;
+}
+#subtitle-2-request{
+  position: absolute;
+  top: 265px;
+  left:60%;
+}
+#subtitle-3-request{
+  position: absolute;
+  top: 385px;
+  left:60%;
+}
+#subtitle-4-request{
+  position: absolute;
+  top: 498px;
+  left:60%;
+}
+.btn-request {
+  position: absolute;
+  top: 565px;
+  left: 57%;
+  width: 359px;
+  height: 75px;
+  background: #f26621 0% 0% no-repeat padding-box;
+  border-radius: 9px;
+  text-align: center;
+  font: normal normal 600 30px/36px Aktifo A;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+@media screen and (max-width:400px) and (min-width:200px){
+  #contaier-3 {
+    /* Layout Properties */
+    position: absolute;
+    top: 4000px;
+    left: 0px;
+    width: 100vw;
+    height: 102vh;
+    /* UI Properties */
+    background: #e5e5e5 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  #left-side {
+    /* Layout Properties */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 641px;
+    height: 1140px;
+    /* UI Properties */
+    background: transparent
+      url("./Assets/GS_DIGITAL_AD_WALL_FILMS_INTERIOR_DESIGN_COLLECTION_Indoor_MPI8621_Removable@2x.png")
+      0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  #right-side {
+    width: 100vw;
+    position:relative;
+    bottom: 1520px;
+    right: 200px;
+  }
+  #question {
+    /* Layout Properties */
+    position: absolute;
+    top: 42px;
+    left: 240px;
+    width: 215px;
+    height: 61px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 600 30px/34px Aktifo A;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+  #img-1-request,
+  #img-2-request,
+  #img-3-request,
+  #img-4-request {
+    /* Layout Properties */
+    position: absolute;
+    top: 14px;
+    left: 240px;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  #img-1-request {
+    position: absolute;
+    top: 94px;
+  }
+  #img-2-request {
+    position: absolute;
+    top: 374px;
+  }
+  #img-3-request {
+    position: absolute;
+    top:754px;
+  }
+  #img-4-request {
+    position: absolute;
+    top: 1044px;
+  }
+  #title-1-request,#title-2-request,#title-3-request,#title-4-request{
+    /* Layout Properties */
+    position: absolute;
+    top: 155px;
+    left:60%;
+    width: 338px;
+    height: 24px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 20px/34px Aktifo A;
+    letter-spacing: 0px;
+    color: #292929;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  #title-2-request {
+    position: absolute;
+    top: 435px;
+    left: 60%;
+  }
+  #title-3-request {
+    position: absolute;
+    top: 825px;
+    left: 60%;
+  }
+  #title-4-request {
+    position: absolute;
+    top: 1120px;
+    left: 60%;
+  }
+  #parent-request {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #child-request1,
+  #child-request2,
+  #child-request3,
+  #child-request4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    width: 46px;
+    height: 24px;
+  }
+  #subtitle-1-request{
+    position: absolute;
+    top: 180px;
+    left:60%;
+  }
+  #subtitle-2-request{
+    position: absolute;
+    top: 475px;
+    left:60%;
+  }
+  #subtitle-3-request{
+    position: absolute;
+    top: 850px;
+    left:60%;
+  }
+  #subtitle-4-request{
+    position: absolute;
+    top: 1150px;
+    left:60%;
+  }
+  .btn-request {
+    position: absolute;
+    top: 5565px;
+    left: 57%;
+    width: 359px;
+    height: 75px;
+    background: #f26621 0% 0% no-repeat padding-box;
+    border-radius: 9px;
+    text-align: center;
+    font: normal normal 600 30px/36px Aktifo A;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+  
+}

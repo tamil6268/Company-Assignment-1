@@ -1,0 +1,216 @@
+#form-container {
+  /* Layout Properties */
+  position: absolute;
+  top: 60px;
+  left: 748px;
+  width: 604px;
+  height: 124%;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 14px 27px #00000017;
+  border-radius: 13px;
+  opacity: 1;
+  z-index: +5;
+}
+#head-form {
+  /* Layout Properties */
+  position: absolute;
+  top: 25px;
+  left: 9%;
+  /* width: 276px;
+  height: 41px; */
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 600 34px/41px Aktifo A;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+#sub-head-form {
+  /* Layout Properties */
+  position: relative;
+  top: 73px;
+  left: 9%;
+  width: 404px;
+  height: 24px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 20px/24px Aktifo A;
+  letter-spacing: 0px;
+  color: #292929;
+  opacity: 1;
+}
+
+/* #form-flex{
+    display: flex;
+    flex-direction: column;
+} */
+/* .lname {
+  float: left;
+}
+.rname {
+  float: right;
+} */
+
+input,select {
+  width: 233px;
+  height: 30px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 0.25px solid #62777d;
+  border-radius: 8px;
+  opacity: 1;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  
+}
+#form {
+  position: absolute;
+  top: 130px;
+  left: 10%;
+  right: 7%;
+  text-align: left;
+}
+.center-name{
+  float: left;
+}
+textarea{
+    width: 510px;
+    height: 100px;
+    border-radius: 8px;
+    resize: none;
+}
+#checkbox-form{
+    display: flex;
+    margin-top: 10px;
+    justify-content:left;
+}
+#checkbox-form span{
+    width: 1000px;
+}
+#form-btn{
+    position: absolute;
+    left:90px;
+    width: 339px;
+    height: 55px;
+    background: #f26621 0% 0% no-repeat padding-box;
+    border-radius: 9px;
+    text-align: center;
+    font: normal normal 600 30px/36px Aktifo A;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+}
+#form-btn:hover{
+    width: 341px;
+  height: 58px;
+  font: normal normal 600 32px/34px Aktifo A;
+}
+#grid{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.input-field{
+   width: 96%;
+}
+.error{
+  position: relative;
+  font-size: 15px;
+}
+@media screen and (max-width:400px){
+  #form-container {
+    /* Layout Properties */
+    position: absolute;
+    top: 520px;
+    left: 6px;
+    width: 362px;
+    height: 109%;
+    /* UI Properties */
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 14px 27px #00000017;
+    border-radius: 13px;
+    opacity: 1;
+    z-index: +5;
+  }
+  #head-form {
+    /* Layout Properties */
+    position: absolute;
+    top: 25px;
+    left: 10%;
+    text-align: left;
+    font: normal normal 600 26px/28px Aktifo A;
+  
+  }
+  
+  #sub-head-form {
+    /* Layout Properties */
+    position: relative;
+    top: 73px;
+    left: 10%;
+    width: 404px;
+    height: 24px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 16px/18px Aktifo A;
+
+  }
+  input,select {
+    width: 280px;
+    height: 25px;
+    /* UI Properties */
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 0.25px solid #62777d;
+    border-radius: 8px;
+    margin-top: 7px;
+    margin-bottom: 9px;
+    
+  }
+  #form {
+    position: absolute;
+    top: 130px;
+    left: 10%;
+    right: 7%;
+    text-align: left;
+  }
+  .center-name{
+    float: left;
+  }
+  textarea{
+      width: 290px;
+      height: 80px;
+      border-radius: 8px;
+      resize: none;
+  }
+  #checkbox-form{
+      display: flex;
+      margin-top: 10px;
+      justify-content:left;
+  }
+  #checkbox-form span{
+      width: 1000px;
+  }
+  #form-btn{
+      position: absolute;
+      left:40px;
+      width: 229px;
+      height: 40px;
+      font: normal normal 600 24px/28px Aktifo A;
+      margin-top: 5px;
+  }
+  #form-btn:hover{
+      width: 230px;
+    height: 41px;
+    font-size: 25px;
+  }
+  #grid{
+    display: inline-block;
+  }
+  .input-field{
+     width: 96%;
+  }
+  .error{
+    position: relative;
+    font-size: 15px;
+  }
+}

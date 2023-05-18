@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29">
+  <g id="Asset_2ne" data-name="Asset 2ne" transform="translate(-0.438 -0.191)">
+    <g id="Layer_2">
+      <g id="Symbols">
+        <path id="Path_89" data-name="Path 89" d="M26.167,6.6v20.44H10.921V6.6H26.173m.6-.6H10.32V27.642H26.774V6Z" transform="translate(-4.116 -2.393)" fill="#fff"/>
+        <line id="Line_1" data-name="Line 1" x1="10.328" transform="translate(9.264 20.212)" fill="none" stroke="#fff" stroke-width="1"/>
+        <line id="Line_2" data-name="Line 2" x1="16.064" transform="translate(6.397 17.494)" fill="none" stroke="#fff" stroke-width="1"/>
+        <line id="Line_3" data-name="Line 3" x1="5.032" transform="translate(9.264 22.039)" fill="none" stroke="#fff" stroke-width="1"/>
+        <rect id="Rectangle_140" data-name="Rectangle 140" width="28" height="29" transform="translate(0.438 0.191)" fill="none" opacity="0.3"/>
+        <line id="Line_4" data-name="Line 4" y1="2.501" x2="4.335" transform="translate(12.583 8.639)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+        <line id="Line_5" data-name="Line 5" y1="2.507" x2="4.341" transform="translate(11.657 11.098)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+.parent-footer{
+    width: 100vw;
+    height: 40%;
+    background-color: black;
+    position: absolute;
+    top: 2180px;
+}
+#img{
+    background-image: url('./Assets/Vector\ Smart\ Object.png');
+}
