@@ -4,7 +4,7 @@ import img2 from "./Assets/Group 195.svg";
 import img3 from "./Assets/Asset 2ne.svg";
 import Form from './Form';
 import Success from './Success';
-import {useEffect,useState} from 'react';
+import {useState} from 'react';
 
 function Head() {
   const [state,setState] =useState(true)
