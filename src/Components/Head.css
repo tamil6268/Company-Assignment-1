@@ -139,7 +139,7 @@
 
 /* Media Query */
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
   #container-1 {
     width: 100vw;
     height: 740px;

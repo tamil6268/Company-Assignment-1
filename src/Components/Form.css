@@ -118,7 +118,7 @@ textarea{
   position: relative;
   font-size: 15px;
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:600px){
   #form-container {
     /* Layout Properties */
     position: absolute;
@@ -212,5 +212,6 @@ textarea{
   .error{
     position: relative;
     font-size: 15px;
+    font-weight: 600;
   }
 }

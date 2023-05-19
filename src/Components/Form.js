@@ -2,48 +2,86 @@ import "./Form.css";
 import { useState } from "react";
 const Form = ({func,formHideFunc}) => {
   const [message, setMessage] = useState({});
+  const [color, setColor] = useState({});
   const [data, setData] = useState({
     firstname: '',
     lastname: '',
     email: '',
     contactnumber: '',
-    company:'',
-    distributor:''
   });
-
+  const ValidationPart = {
+    firstname: /[a-zA-Z]{5,12}$/i,
+    lastname: /[a-zA-Z]{5,12}$/i,
+    email: /[a-zA-Z0-9-_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+/,
+    contactnumber:/[0-9]{10}$/,
+  }
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
   const handleClick = (e) => {
     e.preventDefault();
-    const errors = {};
-    if (!data.firstname) {
-      errors.firstname = 'firstName is required';
+    let error={};
+    let effect={}
+    //first name
+    if(!data.firstname){
+       error.firstname="*Firstname required"
+       effect.firstname="red"
     }
-    if (!data.lastname) {
-      errors.lastname = 'lastName is required';
+    else if(ValidationPart.firstname.test(data.firstname)){
+       error.firstname="✓ correct"
+       effect.firstname="green"
+    }else{
+      error.firstname="✕ Invalid Inputs"
+      effect.firstname="red"
     }
-    if (!data.email) {
-      errors.email = 'Email is required';
+    //last name
+    if(!data.lastname){
+       error.lastname="*Lastname required"
+       effect.lastname="red"
     }
-    if (!data.contactnumber) {
-      errors.contactnumber = 'contact is required';
+    else if(ValidationPart.lastname.test(data.lastname)){
+       error.lastname="✓ correct"
+       effect.lastname="green"
+    }else{
+      error.lastname="✕ Invalid Inputs"
+      effect.lastname="red"
     }
-    if (!data.company) {
-      errors.company = 'company is required';
+    //email
+    if(!data.email){
+       error.email="*Email required"
+       effect.email="red"
     }
-    if (Object.keys(errors).length > 0) {
-        setMessage(errors);
-        if(Object.keys(message).length > 0){
-          func(true)
-          // formHideFunc()
-        }else{
-          func(false)
-        }
-        return;
+    else if(ValidationPart.email.test(data.email)){
+       error.email="✓ correct"
+       effect.email="green"
+    }else{
+      error.email="✕ Invalid Inputs"
+      effect.email="red"
     }
-   
+    //contact
+    if(ValidationPart.contactnumber.test(data.contactnumber)){
+       error.contactnumber="✓ correct"
+       effect.contactnumber="green"
+    }
+    else if(!data.contactnumber){
+       error.contactnumber="*contact required"
+       effect.contactnumber="red"
+    }
+    else if(data.contactnumber.length<10){
+      error.contactnumber="✕ required 10 digits"
+      effect.contactnumber="red"
+    }
+    if((error.firstname && error.lastname && error.email && error.contactnumber)==="✓ correct"){
+      func(true)
+      formHideFunc(false)
+    }
+    else if (Object.keys(error).length > 0) {
+      setMessage(error);
+      setColor(effect);
+      return;
+    }
   };
+
   return (
     <div id="form-container">
       <div id="head-form">Connect with us</div>
@@ -53,33 +91,32 @@ const Form = ({func,formHideFunc}) => {
         <div id="grid">
         <div className="lname">
           First Name
-          {<span className="error" style={{color:"red"}}> { message.firstname}</span>}
+          {<span className="error" style={{color:`${color.firstname}`}}> { message.firstname}</span>}
           <br />
           <input type="text" name="firstname" value={data.firstname} onChange={handleChange} required />
         </div>
         <div className="lname">
           Last Name
-          {<span className="error" style={{color:"red"}}> { message.lastname}</span>}
+          {<span className="error" style={{color:`${color.lastname}`}}> { message.lastname}</span>}
           <br />
           <input type="text" name="lastname" value={data.lastname} onChange={handleChange} required />
         </div>
 
         <div className="lname">
           Email
-          {<span className="error" style={{color:"red"}}> { message.email}</span>}
+          {<span className="error" style={{color:`${color.email}`}}> { message.email}</span>}
           <br />
           <input type="email" name="email" value={data.email} onChange={handleChange} required />
         </div>
         <div className="lname">
           Contact Number
-          {<span className="error" style={{color:"red"}}> { message.contactnumber}</span>}
+          {<span className="error" style={{color:`${color.contactnumber}`}}> { message.contactnumber}</span>}
           <br />
           <input type="number" name="contactnumber" value={data.contactnumber} onChange={handleChange} required />
         </div>
 
         <div className="lname">
           Company
-        {<span className="error" style={{color:"red"}}> { message.company}</span>}
           <br />
           <input type="text" name="company" onChange={handleChange} required />
         </div>
@@ -110,7 +147,7 @@ const Form = ({func,formHideFunc}) => {
             offers from Avery Dennison.
           </span>
         </div>
-        <button id="form-btn"value="submit" onClick={handleClick}>
+        <button id="form-btn" type="submit" onClick={handleClick}>
           Submit →
         </button>
       </form>

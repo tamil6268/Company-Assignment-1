@@ -154,7 +154,7 @@
   color: #ffffff;
   opacity: 1;
 }
-@media screen and (max-width:400px) and (min-width:200px){
+@media screen and (max-width:600px){
   #contaier-3 {
     /* Layout Properties */
     position: absolute;

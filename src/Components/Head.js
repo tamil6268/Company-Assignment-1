@@ -9,13 +9,12 @@ import {useState} from 'react';
 function Head() {
   const [state,setState] =useState(true)
   const [sucess,setSucess] =useState(false)
-  // useEffect(()=>{
-  //    setTimeout(()=>{
-  //      setState(true)
-  //    },4000)
-  // },[])
-  function formHide(){
-    setState(false)
+  function formHide(a){
+    if(a===false){
+      setState(false)
+    }else{
+      setState(true)
+    }
   }
   return (
     <div id="container-1">
@@ -42,7 +41,7 @@ function Head() {
         </div>
       </div>
       {state && <Form func={setSucess} formHideFunc={formHide}/>}
-      {sucess && <Success func={setSucess}/> }
+      {sucess && <Success func={setSucess} formHideFunc={formHide} /> }
     </div>
   );
 }
