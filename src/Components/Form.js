@@ -1,5 +1,5 @@
 import "./Form.css";
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 const Form = ({func,formHideFunc}) => {
   const [message, setMessage] = useState({});
   const [color, setColor] = useState({});
@@ -9,6 +9,9 @@ const Form = ({func,formHideFunc}) => {
     email: '',
     contactnumber: '',
   });
+  useEffect(()=>{
+  
+  },[message,color,data])
   const ValidationPart = {
     firstname: /[a-zA-Z]{5,12}$/i,
     lastname: /[a-zA-Z]{5,12}$/i,
@@ -17,8 +20,6 @@ const Form = ({func,formHideFunc}) => {
   }
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
-  };
-  const handleClick = (e) => {
     e.preventDefault();
     let error={};
     let effect={}
@@ -67,21 +68,22 @@ const Form = ({func,formHideFunc}) => {
        error.contactnumber="*contact required"
        effect.contactnumber="red"
     }
-    else if(data.contactnumber.length<10){
+    else if(data.contactnumber.length<9){
       error.contactnumber="✕ required 10 digits"
       effect.contactnumber="red"
     }
-    if((error.firstname && error.lastname && error.email && error.contactnumber)==="✓ correct"){
-      func(true)
-      formHideFunc(false)
-    }
-    else if (Object.keys(error).length > 0) {
+    if (Object.keys(error).length > 0) {
       setMessage(error);
       setColor(effect);
       return;
     }
   };
-
+  const handleClick=()=>{
+    if((message.firstname && message.lastname && message.email && message.contactnumber)==="✓ correct"){
+      func(true)
+      formHideFunc(false)
+    }
+  }
   return (
     <div id="form-container">
       <div id="head-form">Connect with us</div>

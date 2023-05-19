@@ -141,7 +141,7 @@
 
 @media screen and (max-width:600px) {
   #container-1 {
-    width: 100vw;
+    width: auto;
     height: 740px;
     opacity: 1;
     background-image: url('./Assets/yellow\ car\ 2.png');
