@@ -57,10 +57,12 @@
   color: green;
 }
 #btn{
-  width: 120px;
-  height: 30px;
-  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  background-color: transparent;
  position: absolute;
- top: 120px;
- right: 220px;
+ top: 10px;
+ right: 10px;
 }

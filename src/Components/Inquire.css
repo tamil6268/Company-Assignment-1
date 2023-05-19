@@ -4,11 +4,12 @@
   top: 774px;
   left: 0px;
   width: 100vw;
-  height: 140vh;
+  height: 100vh;
   /* UI Properties */
   background: transparent url("./Assets/back\ van.png") 0% 0% no-repeat
     padding-box;
   opacity: 1;
+  overflow-x: hidden;
 }
 #title-inquire {
   /* Layout Properties */

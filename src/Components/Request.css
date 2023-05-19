@@ -1,13 +1,14 @@
 #contaier-3 {
   /* Layout Properties */
   position: absolute;
-  top: 1513px;
+  top: 1430px;
   left: 0px;
   width: 100vw;
-  height: 102vh;
+  height: 100vh;
   /* UI Properties */
   background: #e5e5e5 0% 0% no-repeat padding-box;
   opacity: 1;
+  overflow: hidden;
 }
 #left-side {
   /* Layout Properties */

@@ -25,7 +25,7 @@ const Form = ({func,formHideFunc}) => {
     let effect={}
     //first name
     if(!data.firstname){
-       error.firstname="*Firstname required"
+       error.firstname="*required"
        effect.firstname="red"
     }
     else if(ValidationPart.firstname.test(data.firstname)){
@@ -37,7 +37,7 @@ const Form = ({func,formHideFunc}) => {
     }
     //last name
     if(!data.lastname){
-       error.lastname="*Lastname required"
+       error.lastname="*required"
        effect.lastname="red"
     }
     else if(ValidationPart.lastname.test(data.lastname)){
@@ -49,7 +49,7 @@ const Form = ({func,formHideFunc}) => {
     }
     //email
     if(!data.email){
-       error.email="*Email required"
+       error.email="*required"
        effect.email="red"
     }
     else if(ValidationPart.email.test(data.email)){
@@ -65,7 +65,7 @@ const Form = ({func,formHideFunc}) => {
        effect.contactnumber="green"
     }
     else if(!data.contactnumber){
-       error.contactnumber="*contact required"
+       error.contactnumber="*required"
        effect.contactnumber="red"
     }
     else if(data.contactnumber.length<9){
